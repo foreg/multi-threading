@@ -13,6 +13,9 @@ public interface ThreadPool {
     // должен выполнить это задание.
     // Каждое задание должны быть выполнено ровно 1 раз
     void execute( Runnable runnable );
+
+    //закончить существующие и не принимать новых
+    void shutdown();
 }
 
 
